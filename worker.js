@@ -274,8 +274,7 @@ function weeklyLinkMatchesDate(linkText,monday,lang){
   const months=monthNames(lang);
   const sd=monday.getUTCDate(), ed=end.getUTCDate();
   const sm=months[monday.getUTCMonth()], em=months[end.getUTCMonth()];
-  const year=String(end.getUTCFullYear());
-  if(!s.includes(String(sd)) || !s.includes(String(ed)) || !s.includes(year)) return false;
+  if(!s.includes(String(sd)) || !s.includes(String(ed))) return false;
   if(monday.getUTCMonth()===end.getUTCMonth()){
     return s.includes(sm);
   }
@@ -302,14 +301,67 @@ async function findExactWeeklyPage(monday,lang){
   return null;
 }
 
+
+function localizedMonths(lang){
+  return lang==="es"
+    ? ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"]
+    : ["january","february","march","april","may","june","july","august","september","october","november","december"];
+}
+function endOfWeek(monday){
+  const d=new Date(monday);
+  d.setUTCDate(d.getUTCDate()+6);
+  return d;
+}
+function normalizeWeekText(s=""){
+  return strip(s).toLowerCase().replace(/[–—]/g,"-").replace(/\s+/g," ").trim();
+}
+function matchesWeekText(linkText,monday,lang){
+  const s=normalizeWeekText(linkText);
+  const end=endOfWeek(monday);
+  const months=localizedMonths(lang);
+  const sd=String(monday.getUTCDate());
+  const ed=String(end.getUTCDate());
+  const sm=months[monday.getUTCMonth()];
+  const em=months[end.getUTCMonth()];
+
+  // JW.org's issue index normally omits the year from weekly link text.
+  if(!s.includes(sd) || !s.includes(ed)) return false;
+
+  if(monday.getUTCMonth()===end.getUTCMonth()){
+    return s.includes(sm);
+  }
+  return s.includes(sm) && s.includes(em);
+}
+async function exactWorkbookWeek(monday,lang){
+  // The week belongs to the issue determined by its Monday. Probe adjacent
+  // issue pages too, which makes cross-month/cross-issue weeks resilient.
+  const urls=[];
+  for(const delta of [0,-1,1]){
+    const d=new Date(monday);
+    d.setUTCMonth(d.getUTCMonth()+delta);
+    const info=issueInfo(d,lang);
+    if(!urls.includes(info.url)) urls.push(info.url);
+  }
+
+  for(const issueUrl of urls){
+    try{
+      const html=await getText(issueUrl);
+      const candidates=workbookCandidates(html,lang);
+      const exact=candidates.find(x=>matchesWeekText(x.text,monday,lang));
+      if(exact) return exact;
+    }catch(e){}
+  }
+  return null;
+}
+
 async function handleCurrentMaterial(request) {
   try {
     const u = new URL(request.url);
     const lang = u.searchParams.get("lang") === "es" ? "es" : "en";
     const date = u.searchParams.get("date") || new Date().toISOString().slice(0,10);
     const monday = mondayOf(date);
-    const chosen = await findExactWeeklyPage(monday, lang);
-    if (!chosen) throw new Error("No exact weekly workbook page found");
+    const chosen = await exactWorkbookWeek(monday, lang);
+    if (!chosen) throw new Error("No exact weekly workbook page found for the requested date");
     const weekHtml = await getText(chosen.href);
     const mwb = pageData(weekHtml, lang, chosen.href);
     const wt = await watchtowerData(monday, lang);
