@@ -36,3 +36,9 @@ on the same requested week.
 - Removes the custom User-Agent header.
 - Corrects Bible-reading parsing so a date heading such as "August 24-30" is not mistaken for "JEREMIAH 29-30".
 - API errors now include requested date/language for easier diagnosis.
+
+
+## v13 API error-handler fix
+- Fixed a Worker runtime bug where the error handler referenced `date` and `lang` outside their JavaScript scope.
+- Added `/api/health` for a simple Worker health check.
+- `/api/current-material` now always returns readable JSON errors instead of crashing the Worker when JW.org retrieval fails.

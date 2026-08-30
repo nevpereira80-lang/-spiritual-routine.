@@ -387,10 +387,10 @@ function looksLikeBibleHeading(s,lang){
 }
 
 async function handleCurrentMaterial(request) {
+  const u = new URL(request.url);
+  const lang = u.searchParams.get("lang") === "es" ? "es" : "en";
+  const date = u.searchParams.get("date") || new Date().toISOString().slice(0,10);
   try {
-    const u = new URL(request.url);
-    const lang = u.searchParams.get("lang") === "es" ? "es" : "en";
-    const date = u.searchParams.get("date") || new Date().toISOString().slice(0,10);
     const monday = mondayOf(date);
     let chosenUrl=directWorkbookUrl(monday,lang);
     let weekHtml;
@@ -453,6 +453,17 @@ function b64ToBytes(b64) {
 export default {
   async fetch(request) {
     const url = new URL(request.url);
+
+    if (url.pathname === "/api/health") {
+      return new Response(JSON.stringify({
+        ok: true,
+        service: "spiritual-routine",
+        version: "v13"
+      }), {
+        status: 200,
+        headers: {"content-type":"application/json; charset=utf-8","cache-control":"no-store"}
+      });
+    }
 
     if (url.pathname === "/api/current-material") {
       return handleCurrentMaterial(request);
