@@ -55,3 +55,17 @@ The included `update-material-workflow.yml` must be created in GitHub at:
 Because the repository is public, standard GitHub-hosted Actions runners are free.
 The workflow runs daily and can also be run manually from the Actions tab.
 Each successful data change commits `meeting-data.js`, which then triggers the existing Cloudflare deployment.
+
+
+## v15 — Elder Track Spanish/link fix
+- All 12 Elder Track Bible assignments now have separate English and Spanish scripture references.
+- The curriculum summary list also switches scripture book names with the selected language.
+- Verified direct JW.org article URLs are used where available.
+- For older articles with brittle direct slugs, the app links to the correct Watchtower issue page rather than a missing page.
+
+
+## v16 — Light / Dark mode
+- Added Appearance under Settings.
+- Choose Light or Dark.
+- The choice is saved on each device.
+- Most future app/UI updates can be applied by replacing only `worker.js` in GitHub.
