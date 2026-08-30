@@ -48,7 +48,7 @@ function issueInfo(monday,lang){
  return {url:base+span+"/",weekIndex};
 }
 async function getText(url){
- const r=await fetch(url,{headers:{"User-Agent":"Mozilla/5.0 SpiritualRoutine/1.0","Accept-Language":"en,es;q=0.9"}});
+ const r=await fetch(url,{headers:{"Accept":"text/html,application/xhtml+xml"}});
  if(!r.ok)throw new Error(`${r.status} ${url}`);
  return await r.text();
 }
@@ -177,11 +177,9 @@ function pageData(html,lang,url){
  let weeklyBible="";
  // First prominent all-caps Bible-book + chapter range style heading.
  for(const h of hs){
-  if(/\b\d{1,3}(?:\s*[–-]\s*\d{1,3})?\b/.test(h.text) && h.text.length<80){
-    const low=h.text.toLowerCase();
-    if(!low.includes("ministry")&&!low.includes("ministerio")&&!low.includes("week")&&!low.includes("semana")){
-      weeklyBible=h.text;break;
-    }
+  if(h.text.length<80 && looksLikeBibleHeading(h.text,lang)){
+    weeklyBible=h.text.replace(/\s+/g," ").trim();
+    break;
   }
  }
  let meetingReading="";
@@ -354,16 +352,57 @@ async function exactWorkbookWeek(monday,lang){
   return null;
 }
 
+
+function titleMonth(lang,m){
+ const en=["January","February","March","April","May","June","July","August","September","October","November","December"];
+ const es=["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+ return lang==="es"?es[m]:en[m];
+}
+function directWorkbookUrl(monday,lang){
+ const end=new Date(monday); end.setUTCDate(end.getUTCDate()+6);
+ const issue=issueInfo(monday,lang).url;
+ const sd=monday.getUTCDate(), ed=end.getUTCDate(), year=end.getUTCFullYear();
+ const sm=titleMonth(lang,monday.getUTCMonth()), em=titleMonth(lang,end.getUTCMonth());
+ let slug;
+ if(lang==="es"){
+   slug=monday.getUTCMonth()===end.getUTCMonth()
+    ? `Vida-y-Ministerio-Cristianos-${sd}-a-${ed}-de-${sm}-de-${year}`
+    : `Vida-y-Ministerio-Cristianos-${sd}-de-${sm}-a-${ed}-de-${em}-de-${year}`;
+ }else{
+   slug=monday.getUTCMonth()===end.getUTCMonth()
+    ? `Life-and-Ministry-Meeting-Schedule-for-${sm}-${sd}-${ed}-${year}`
+    : `Life-and-Ministry-Meeting-Schedule-for-${sm}-${sd}-${em}-${ed}-${year}`;
+ }
+ return issue+slug+"/";
+}
+function looksLikeBibleHeading(s,lang){
+ const low=s.toLowerCase();
+ const monthWords=lang==="es"
+  ? ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"]
+  : ["january","february","march","april","may","june","july","august","september","october","november","december"];
+ if(monthWords.some(m=>low.includes(m)))return false;
+ if(/^(song|canción|cancion)\b/i.test(s))return false;
+ if(/^(treasures|tesoros|spiritual gems|busquemos|bible reading|lectura de la biblia)/i.test(s))return false;
+ return /[a-záéíóúñ]{2,}\s+\d{1,3}(?:\s*[,–-]\s*\d{1,3})?\s*$/i.test(s.trim());
+}
+
 async function handleCurrentMaterial(request) {
   try {
     const u = new URL(request.url);
     const lang = u.searchParams.get("lang") === "es" ? "es" : "en";
     const date = u.searchParams.get("date") || new Date().toISOString().slice(0,10);
     const monday = mondayOf(date);
-    const chosen = await exactWorkbookWeek(monday, lang);
-    if (!chosen) throw new Error("No exact weekly workbook page found for the requested date");
-    const weekHtml = await getText(chosen.href);
-    const mwb = pageData(weekHtml, lang, chosen.href);
+    let chosenUrl=directWorkbookUrl(monday,lang);
+    let weekHtml;
+    try{
+      weekHtml=await getText(chosenUrl);
+    }catch(firstError){
+      const chosen=await exactWorkbookWeek(monday,lang);
+      if(!chosen)throw firstError;
+      chosenUrl=chosen.href;
+      weekHtml=await getText(chosenUrl);
+    }
+    const mwb = pageData(weekHtml, lang, chosenUrl);
     const wt = await watchtowerData(monday, lang);
 
     return new Response(JSON.stringify({
@@ -382,7 +421,7 @@ async function handleCurrentMaterial(request) {
   } catch (error) {
     return new Response(JSON.stringify({
       error: "Unable to retrieve current JW.org material",
-      detail: String(error?.message || error)
+      detail: String(error?.message || error), requestedDate: date, language: lang
     }), {
       status: 502,
       headers: {"content-type":"application/json; charset=utf-8","cache-control":"no-store"}
