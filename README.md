@@ -42,3 +42,16 @@ on the same requested week.
 - Fixed a Worker runtime bug where the error handler referenced `date` and `lang` outside their JavaScript scope.
 - Added `/api/health` for a simple Worker health check.
 - `/api/current-material` now always returns readable JSON errors instead of crashing the Worker when JW.org retrieval fails.
+
+
+## v14 — GitHub scheduled updater
+JW.org returns HTTP 403 to Cloudflare Worker requests. This version no longer asks Cloudflare to fetch JW.org.
+
+`meeting-data.js` contains the saved official weekly data.
+`update-material.mjs` is run by GitHub Actions and refreshes that file.
+The included `update-material-workflow.yml` must be created in GitHub at:
+`.github/workflows/update-material.yml`
+
+Because the repository is public, standard GitHub-hosted Actions runners are free.
+The workflow runs daily and can also be run manually from the Actions tab.
+Each successful data change commits `meeting-data.js`, which then triggers the existing Cloudflare deployment.

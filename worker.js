@@ -1,3 +1,4 @@
+import meetingData from "./meeting-data.js";
 
 const MONTHS_EN=["january","february","march","april","may","june","july","august","september","october","november","december"];
 const MONTHS_ES=["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
@@ -387,46 +388,36 @@ function looksLikeBibleHeading(s,lang){
 }
 
 async function handleCurrentMaterial(request) {
-  const u = new URL(request.url);
-  const lang = u.searchParams.get("lang") === "es" ? "es" : "en";
-  const date = u.searchParams.get("date") || new Date().toISOString().slice(0,10);
-  try {
-    const monday = mondayOf(date);
-    let chosenUrl=directWorkbookUrl(monday,lang);
-    let weekHtml;
-    try{
-      weekHtml=await getText(chosenUrl);
-    }catch(firstError){
-      const chosen=await exactWorkbookWeek(monday,lang);
-      if(!chosen)throw firstError;
-      chosenUrl=chosen.href;
-      weekHtml=await getText(chosenUrl);
-    }
-    const mwb = pageData(weekHtml, lang, chosenUrl);
-    const wt = await watchtowerData(monday, lang);
+  const u=new URL(request.url);
+  const lang=u.searchParams.get("lang")==="es"?"es":"en";
+  const requested=u.searchParams.get("date")||new Date().toISOString().slice(0,10);
 
+  const entries=meetingData[lang]||[];
+  const hit=entries.find(x=>requested>=x.weekStart&&requested<=x.weekEnd)
+    || entries.find(x=>x.weekStart===requested)
+    || entries[0];
+
+  if(!hit){
     return new Response(JSON.stringify({
-      weekStart: iso(monday),
-      source: "jw.org",
-      fetchedAt: new Date().toISOString(),
-      ...mwb,
-      ...wt
-    }), {
-      status: 200,
-      headers: {
-        "content-type": "application/json; charset=utf-8",
-        "cache-control": "public, max-age=1800, s-maxage=21600, stale-while-revalidate=86400"
-      }
-    });
-  } catch (error) {
-    return new Response(JSON.stringify({
-      error: "Unable to retrieve current JW.org material",
-      detail: String(error?.message || error), requestedDate: date, language: lang
-    }), {
-      status: 502,
-      headers: {"content-type":"application/json; charset=utf-8","cache-control":"no-store"}
+      error:"Meeting data has not been generated yet",
+      language:lang,
+      requestedDate:requested
+    }),{
+      status:503,
+      headers:{"content-type":"application/json; charset=utf-8","cache-control":"no-store"}
     });
   }
+
+  return new Response(JSON.stringify({
+    ...hit,
+    source:"github-actions+jw.org"
+  }),{
+    status:200,
+    headers:{
+      "content-type":"application/json; charset=utf-8",
+      "cache-control":"public, max-age=300"
+    }
+  });
 }
 
 const STATIC = {

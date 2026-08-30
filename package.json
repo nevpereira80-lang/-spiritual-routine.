@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "deploy": "wrangler deploy"
+    "deploy": "wrangler deploy",
+    "update-material": "node update-material.mjs"
   },
   "devDependencies": {
     "wrangler": "^4.0.0"
