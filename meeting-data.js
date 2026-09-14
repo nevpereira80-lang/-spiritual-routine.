@@ -1,40 +1,40 @@
 export default {
   "en": [
     {
-      "weekStart": "2026-09-07",
-      "weekEnd": "2026-09-13",
-      "weeklyBible": "JEREMIAH 32-33",
-      "meetingReading": " Jer 32:6-18",
-      "treasures": "Reflecting on Jehovah’s Qualities Builds Faith",
-      "living": "Make Your Blows Count During the Campaign",
-      "congregation": "wcg chap. 7",
-      "gemsReference": " Jer 33:23",
-      "gemsQuestion": ", 24 ​—Who are the “two families” spoken of here?",
+      "weekStart": "2026-09-14",
+      "weekEnd": "2026-09-20",
+      "weeklyBible": "JEREMIAH 34-35",
+      "meetingReading": " Jer 35:1-14",
+      "treasures": "Jehovah Rewards Faithful Obedience",
+      "living": "Self-Control Helps Us to Obey",
+      "congregation": "wcg chap. 8",
+      "gemsReference": " Jer 34:7",
+      "gemsQuestion": "​—What archaeological evidence supports the events described in this verse?",
       "gemsSource": "",
       "additionalGems": [],
-      "watchtower": "October 2026",
-      "mwbUrl": "https://www.jw.org/en/library/jw-meeting-workbook/september-october-2026-mwb/Life-and-Ministry-Meeting-Schedule-for-September-7-13-2026/",
+      "watchtower": "1926—One Hundred Years Ago",
+      "mwbUrl": "https://www.jw.org/en/library/jw-meeting-workbook/september-october-2026-mwb/Life-and-Ministry-Meeting-Schedule-for-September-14-20-2026/",
       "watchtowerUrl": "https://www.jw.org/en/library/magazines/watchtower-study-october-2026/",
-      "fetchedAt": "2026-09-13T14:36:49.429Z"
+      "fetchedAt": "2026-09-14T14:42:06.332Z"
     }
   ],
   "es": [
     {
-      "weekStart": "2026-09-07",
-      "weekEnd": "2026-09-13",
-      "weeklyBible": "JEREMÍAS 32, 33",
-      "meetingReading": " Jer 32:6-18",
-      "treasures": "Meditar en las cualidades de Jehová fortalece nuestra fe",
-      "living": "En esta campaña, ni un golpe al aire",
-      "congregation": "wcg cap. 7",
-      "gemsReference": " Jer 33:23",
-      "gemsQuestion": ", 24 . ¿Cuáles son las “dos familias” que se mencionan aquí?",
+      "weekStart": "2026-09-14",
+      "weekEnd": "2026-09-20",
+      "weeklyBible": "JEREMÍAS 34, 35",
+      "meetingReading": " Jer 35:1-14",
+      "treasures": "Jehová recompensa a los que siempre le obedecen",
+      "living": "El autocontrol nos ayuda a obedecer",
+      "congregation": "wcg cap. 8",
+      "gemsReference": " Jer 34:7",
+      "gemsQuestion": "¿Qué pruebas arqueológicas confirman los hechos que se describen en este versículo?",
       "gemsSource": "",
       "additionalGems": [],
       "watchtower": "1926: cien años atrás",
-      "mwbUrl": "https://www.jw.org/es/biblioteca/guia-actividades-reunion-testigos-jehova/septiembre-octubre-2026-mwb/Vida-y-Ministerio-Cristianos-7-a-13-de-septiembre-de-2026/",
+      "mwbUrl": "https://www.jw.org/es/biblioteca/guia-actividades-reunion-testigos-jehova/septiembre-octubre-2026-mwb/Vida-y-Ministerio-Cristianos-14-a-20-de-septiembre-de-2026/",
       "watchtowerUrl": "https://www.jw.org/es/biblioteca/revistas/atalaya-estudio-octubre-2026/",
-      "fetchedAt": "2026-09-13T14:36:49.704Z"
+      "fetchedAt": "2026-09-14T14:42:06.647Z"
     }
   ]
 };
