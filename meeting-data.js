@@ -15,7 +15,7 @@ export default {
       "watchtower": "1926—One Hundred Years Ago",
       "mwbUrl": "https://www.jw.org/en/library/jw-meeting-workbook/september-october-2026-mwb/Life-and-Ministry-Meeting-Schedule-for-September-14-20-2026/",
       "watchtowerUrl": "https://www.jw.org/en/library/magazines/watchtower-study-october-2026/",
-      "fetchedAt": "2026-09-14T14:42:06.332Z"
+      "fetchedAt": "2026-09-15T14:39:33.802Z"
     }
   ],
   "es": [
@@ -34,7 +34,7 @@ export default {
       "watchtower": "1926: cien años atrás",
       "mwbUrl": "https://www.jw.org/es/biblioteca/guia-actividades-reunion-testigos-jehova/septiembre-octubre-2026-mwb/Vida-y-Ministerio-Cristianos-14-a-20-de-septiembre-de-2026/",
       "watchtowerUrl": "https://www.jw.org/es/biblioteca/revistas/atalaya-estudio-octubre-2026/",
-      "fetchedAt": "2026-09-14T14:42:06.647Z"
+      "fetchedAt": "2026-09-15T14:39:34.021Z"
     }
   ]
 };
