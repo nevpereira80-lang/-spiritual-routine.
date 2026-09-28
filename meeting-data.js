@@ -1,40 +1,40 @@
 export default {
   "en": [
     {
-      "weekStart": "2026-09-21",
-      "weekEnd": "2026-09-27",
-      "weeklyBible": "JEREMIAH 36-37",
-      "meetingReading": " Jer 36:1-13",
-      "treasures": "Jehovah Supports Those Who Support His Kingdom",
-      "living": "Remaining Neutral in Our Hearts",
-      "congregation": "wcg chap. 9",
-      "gemsReference": " Jer 36:30",
-      "gemsQuestion": "​—How did the prophecy that Jehoiakim would have no successor come true?",
+      "weekStart": "2026-09-28",
+      "weekEnd": "2026-10-04",
+      "weeklyBible": "JEREMIAH 38-39",
+      "meetingReading": " Jer 38:1-13",
+      "treasures": "Continue Supporting One Another",
+      "living": "“Who Touched Me?”",
+      "congregation": "wcg chap. 10",
+      "gemsReference": " Jer 39:6",
+      "gemsQuestion": ", 7 ​—What bad choice did King Zedekiah make, and what can family heads learn from his example?",
       "gemsSource": "",
       "additionalGems": [],
-      "watchtower": "July 2026",
-      "mwbUrl": "https://www.jw.org/en/library/jw-meeting-workbook/september-october-2026-mwb/Life-and-Ministry-Meeting-Schedule-for-September-21-27-2026/",
+      "watchtower": "Learn From the Gibeonites",
+      "mwbUrl": "https://www.jw.org/en/library/jw-meeting-workbook/september-october-2026-mwb/Life-and-Ministry-Meeting-Schedule-for-September-28-October-4-2026/",
       "watchtowerUrl": "https://www.jw.org/en/library/magazines/watchtower-study-july-2026/",
-      "fetchedAt": "2026-09-27T14:37:52.343Z"
+      "fetchedAt": "2026-09-28T14:42:17.990Z"
     }
   ],
   "es": [
     {
-      "weekStart": "2026-09-21",
-      "weekEnd": "2026-09-27",
-      "weeklyBible": "JEREMÍAS 36, 37",
-      "meetingReading": " Jer 36:1-13",
-      "treasures": "Jehová ayuda a quienes apoyan su Reino",
-      "living": "Seamos siempre neutrales en nuestro corazón",
-      "congregation": "wcg cap. 9",
-      "gemsReference": " Jer 36:30",
-      "gemsQuestion": "¿Cómo se cumplió la profecía de que Jehoiaquim no tendría sucesor?",
+      "weekStart": "2026-09-28",
+      "weekEnd": "2026-10-04",
+      "weeklyBible": "JEREMÍAS 38, 39",
+      "meetingReading": " Jer 38:1-13",
+      "treasures": "No dejemos de ayudarnos unos a otros",
+      "living": "“¿Quién me tocó?”",
+      "congregation": "wcg cap. 10",
+      "gemsReference": " Jer 39:6",
+      "gemsQuestion": ", 7 . ¿Qué mala decisión tomó Sedequías, y qué pueden aprender los cabezas de familia de su mal ejemplo?",
       "gemsSource": "",
       "additionalGems": [],
       "watchtower": "Aprendamos de los gabaonitas",
-      "mwbUrl": "https://www.jw.org/es/biblioteca/guia-actividades-reunion-testigos-jehova/septiembre-octubre-2026-mwb/Vida-y-Ministerio-Cristianos-21-a-27-de-septiembre-de-2026/",
+      "mwbUrl": "https://www.jw.org/es/biblioteca/guia-actividades-reunion-testigos-jehova/septiembre-octubre-2026-mwb/Vida-y-Ministerio-Cristianos-28-de-septiembre-a-4-de-octubre-de-2026/",
       "watchtowerUrl": "https://www.jw.org/es/biblioteca/revistas/atalaya-estudio-julio-2026/",
-      "fetchedAt": "2026-09-27T14:37:52.449Z"
+      "fetchedAt": "2026-09-28T14:42:18.143Z"
     }
   ]
 };
