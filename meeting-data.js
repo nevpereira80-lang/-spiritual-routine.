@@ -15,7 +15,7 @@ export default {
       "watchtower": "Learn From the Gibeonites",
       "mwbUrl": "https://www.jw.org/en/library/jw-meeting-workbook/september-october-2026-mwb/Life-and-Ministry-Meeting-Schedule-for-September-28-October-4-2026/",
       "watchtowerUrl": "https://www.jw.org/en/library/magazines/watchtower-study-july-2026/",
-      "fetchedAt": "2026-10-02T19:26:04.046Z"
+      "fetchedAt": "2026-10-03T18:05:49.281Z"
     }
   ],
   "es": [
@@ -34,7 +34,7 @@ export default {
       "watchtower": "Aprendamos de los gabaonitas",
       "mwbUrl": "https://www.jw.org/es/biblioteca/guia-actividades-reunion-testigos-jehova/septiembre-octubre-2026-mwb/Vida-y-Ministerio-Cristianos-28-de-septiembre-a-4-de-octubre-de-2026/",
       "watchtowerUrl": "https://www.jw.org/es/biblioteca/revistas/atalaya-estudio-julio-2026/",
-      "fetchedAt": "2026-10-02T19:26:04.137Z"
+      "fetchedAt": "2026-10-03T18:05:49.561Z"
     }
   ]
 };
