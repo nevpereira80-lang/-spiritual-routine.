@@ -1,40 +1,40 @@
 export default {
   "en": [
     {
-      "weekStart": "2026-09-28",
-      "weekEnd": "2026-10-04",
-      "weeklyBible": "JEREMIAH 38-39",
-      "meetingReading": " Jer 38:1-13",
-      "treasures": "Continue Supporting One Another",
-      "living": "“Who Touched Me?”",
-      "congregation": "wcg chap. 10",
-      "gemsReference": " Jer 39:6",
-      "gemsQuestion": ", 7 ​—What bad choice did King Zedekiah make, and what can family heads learn from his example?",
+      "weekStart": "2026-10-05",
+      "weekEnd": "2026-10-11",
+      "weeklyBible": "JEREMIAH 40-41",
+      "meetingReading": " Jer 40:1-10",
+      "treasures": "Gaining a Proper Perspective of Jehovah’s Protection",
+      "living": "Jehovah Is the Protector of Widows",
+      "congregation": "wcg chap. 11",
+      "gemsReference": " Jer 40:12",
+      "gemsQuestion": "​—How does this verse confirm that Jehovah gave his people the good land described in Deuteronomy 8:6-8 ?",
       "gemsSource": "",
       "additionalGems": [],
-      "watchtower": "Learn From the Gibeonites",
-      "mwbUrl": "https://www.jw.org/en/library/jw-meeting-workbook/september-october-2026-mwb/Life-and-Ministry-Meeting-Schedule-for-September-28-October-4-2026/",
-      "watchtowerUrl": "https://www.jw.org/en/library/magazines/watchtower-study-july-2026/",
-      "fetchedAt": "2026-10-04T18:15:36.960Z"
+      "watchtower": "August 2026",
+      "mwbUrl": "https://www.jw.org/en/library/jw-meeting-workbook/september-october-2026-mwb/Life-and-Ministry-Meeting-Schedule-for-October-5-11-2026/",
+      "watchtowerUrl": "https://www.jw.org/en/library/magazines/watchtower-study-august-2026/",
+      "fetchedAt": "2026-10-05T21:33:44.070Z"
     }
   ],
   "es": [
     {
-      "weekStart": "2026-09-28",
-      "weekEnd": "2026-10-04",
-      "weeklyBible": "JEREMÍAS 38, 39",
-      "meetingReading": " Jer 38:1-13",
-      "treasures": "No dejemos de ayudarnos unos a otros",
-      "living": "“¿Quién me tocó?”",
-      "congregation": "wcg cap. 10",
-      "gemsReference": " Jer 39:6",
-      "gemsQuestion": ", 7 . ¿Qué mala decisión tomó Sedequías, y qué pueden aprender los cabezas de familia de su mal ejemplo?",
+      "weekStart": "2026-10-05",
+      "weekEnd": "2026-10-11",
+      "weeklyBible": "JEREMÍAS 40, 41",
+      "meetingReading": " Jer 40:1-10",
+      "treasures": "Tengamos un punto de vista equilibrado de la protección de Jehová",
+      "living": "Jehová protege a las viudas",
+      "congregation": "wcg cap. 11",
+      "gemsReference": " Jer 40:12",
+      "gemsQuestion": "¿Cómo demuestra este versículo que Jehová le dio a su pueblo la buena tierra descrita en Deuteronomio 8:6-8 ?",
       "gemsSource": "",
       "additionalGems": [],
-      "watchtower": "Aprendamos de los gabaonitas",
-      "mwbUrl": "https://www.jw.org/es/biblioteca/guia-actividades-reunion-testigos-jehova/septiembre-octubre-2026-mwb/Vida-y-Ministerio-Cristianos-28-de-septiembre-a-4-de-octubre-de-2026/",
-      "watchtowerUrl": "https://www.jw.org/es/biblioteca/revistas/atalaya-estudio-julio-2026/",
-      "fetchedAt": "2026-10-04T18:15:37.111Z"
+      "watchtower": "Agosto de 2026",
+      "mwbUrl": "https://www.jw.org/es/biblioteca/guia-actividades-reunion-testigos-jehova/septiembre-octubre-2026-mwb/Vida-y-Ministerio-Cristianos-5-a-11-de-octubre-de-2026/",
+      "watchtowerUrl": "https://www.jw.org/es/biblioteca/revistas/atalaya-estudio-agosto-2026/",
+      "fetchedAt": "2026-10-05T21:33:44.144Z"
     }
   ]
 };
