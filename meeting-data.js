@@ -1,40 +1,40 @@
 export default {
   "en": [
     {
-      "weekStart": "2026-10-05",
-      "weekEnd": "2026-10-11",
-      "weeklyBible": "JEREMIAH 40-41",
-      "meetingReading": " Jer 40:1-10",
-      "treasures": "Gaining a Proper Perspective of Jehovah’s Protection",
-      "living": "Jehovah Is the Protector of Widows",
-      "congregation": "wcg chap. 11",
-      "gemsReference": " Jer 40:12",
-      "gemsQuestion": "​—How does this verse confirm that Jehovah gave his people the good land described in Deuteronomy 8:6-8 ?",
+      "weekStart": "2026-10-12",
+      "weekEnd": "2026-10-18",
+      "weeklyBible": "JEREMIAH 42-44",
+      "meetingReading": " Jer 43:1-13",
+      "treasures": "They Asked, but They Did Not Listen",
+      "living": "Local Needs",
+      "congregation": "wcg chap. 12",
+      "gemsReference": " Jer 44:18",
+      "gemsQuestion": "​—Why could the Israelites not justifiably blame their suffering on the fact that they had stopped “making sacrifices to the Queen of Heaven”?",
       "gemsSource": "",
       "additionalGems": [],
       "watchtower": "August 2026",
-      "mwbUrl": "https://www.jw.org/en/library/jw-meeting-workbook/september-october-2026-mwb/Life-and-Ministry-Meeting-Schedule-for-October-5-11-2026/",
+      "mwbUrl": "https://www.jw.org/en/library/jw-meeting-workbook/september-october-2026-mwb/Life-and-Ministry-Meeting-Schedule-for-October-12-18-2026/",
       "watchtowerUrl": "https://www.jw.org/en/library/magazines/watchtower-study-august-2026/",
-      "fetchedAt": "2026-10-11T19:05:29.755Z"
+      "fetchedAt": "2026-10-12T22:11:18.429Z"
     }
   ],
   "es": [
     {
-      "weekStart": "2026-10-05",
-      "weekEnd": "2026-10-11",
-      "weeklyBible": "JEREMÍAS 40, 41",
-      "meetingReading": " Jer 40:1-10",
-      "treasures": "Tengamos un punto de vista equilibrado de la protección de Jehová",
-      "living": "Jehová protege a las viudas",
-      "congregation": "wcg cap. 11",
-      "gemsReference": " Jer 40:12",
-      "gemsQuestion": "¿Cómo demuestra este versículo que Jehová le dio a su pueblo la buena tierra descrita en Deuteronomio 8:6-8 ?",
+      "weekStart": "2026-10-12",
+      "weekEnd": "2026-10-18",
+      "weeklyBible": "JEREMÍAS 42-44",
+      "meetingReading": " Jer 43:1-13",
+      "treasures": "Pidieron guía y luego la rechazaron",
+      "living": "Necesidades de la congregación",
+      "congregation": "wcg cap. 12",
+      "gemsReference": " Jer 44:18",
+      "gemsQuestion": "¿Por qué era incorrecto que los israelitas dijeran que estaban sufriendo porque habían dejado de “hacerle sacrificios a la Reina del Cielo”?",
       "gemsSource": "",
       "additionalGems": [],
-      "watchtower": "Agosto de 2026",
-      "mwbUrl": "https://www.jw.org/es/biblioteca/guia-actividades-reunion-testigos-jehova/septiembre-octubre-2026-mwb/Vida-y-Ministerio-Cristianos-5-a-11-de-octubre-de-2026/",
+      "watchtower": "LA ATALAYA (EDICIÓN DE ESTUDIO) Agosto de 2026",
+      "mwbUrl": "https://www.jw.org/es/biblioteca/guia-actividades-reunion-testigos-jehova/septiembre-octubre-2026-mwb/Vida-y-Ministerio-Cristianos-12-a-18-de-octubre-de-2026/",
       "watchtowerUrl": "https://www.jw.org/es/biblioteca/revistas/atalaya-estudio-agosto-2026/",
-      "fetchedAt": "2026-10-11T19:05:29.889Z"
+      "fetchedAt": "2026-10-12T22:11:18.687Z"
     }
   ]
 };
