@@ -15,7 +15,7 @@ export default {
       "watchtower": "August 2026",
       "mwbUrl": "https://www.jw.org/en/library/jw-meeting-workbook/september-october-2026-mwb/Life-and-Ministry-Meeting-Schedule-for-October-12-18-2026/",
       "watchtowerUrl": "https://www.jw.org/en/library/magazines/watchtower-study-august-2026/",
-      "fetchedAt": "2026-10-17T17:25:03.060Z"
+      "fetchedAt": "2026-10-18T17:27:27.853Z"
     }
   ],
   "es": [
@@ -34,7 +34,7 @@ export default {
       "watchtower": "LA ATALAYA (EDICIÓN DE ESTUDIO) Agosto de 2026",
       "mwbUrl": "https://www.jw.org/es/biblioteca/guia-actividades-reunion-testigos-jehova/septiembre-octubre-2026-mwb/Vida-y-Ministerio-Cristianos-12-a-18-de-octubre-de-2026/",
       "watchtowerUrl": "https://www.jw.org/es/biblioteca/revistas/atalaya-estudio-agosto-2026/",
-      "fetchedAt": "2026-10-17T17:25:03.190Z"
+      "fetchedAt": "2026-10-18T17:27:27.970Z"
     }
   ]
 };
