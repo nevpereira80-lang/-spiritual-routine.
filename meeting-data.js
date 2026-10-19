@@ -1,40 +1,40 @@
 export default {
   "en": [
     {
-      "weekStart": "2026-10-12",
-      "weekEnd": "2026-10-18",
-      "weeklyBible": "JEREMIAH 42-44",
-      "meetingReading": " Jer 43:1-13",
-      "treasures": "They Asked, but They Did Not Listen",
-      "living": "Local Needs",
-      "congregation": "wcg chap. 12",
-      "gemsReference": " Jer 44:18",
-      "gemsQuestion": "​—Why could the Israelites not justifiably blame their suffering on the fact that they had stopped “making sacrifices to the Queen of Heaven”?",
+      "weekStart": "2026-10-19",
+      "weekEnd": "2026-10-25",
+      "weeklyBible": "JEREMIAH 45-46",
+      "meetingReading": " Jer 46:13-24",
+      "treasures": "Hope Is Key to Contentment",
+      "living": "“Share What You Have With Others”",
+      "congregation": "wcg chap. 13",
+      "gemsReference": " Jer 46:22",
+      "gemsQuestion": "​—In what way would the sound of Egypt become “like that of a slithering serpent”?",
       "gemsSource": "",
       "additionalGems": [],
-      "watchtower": "August 2026",
-      "mwbUrl": "https://www.jw.org/en/library/jw-meeting-workbook/september-october-2026-mwb/Life-and-Ministry-Meeting-Schedule-for-October-12-18-2026/",
+      "watchtower": "Resist Satan’s Tactics—Trust In Jehovah and In Jesus",
+      "mwbUrl": "https://www.jw.org/en/library/jw-meeting-workbook/september-october-2026-mwb/Life-and-Ministry-Meeting-Schedule-for-October-19-25-2026/",
       "watchtowerUrl": "https://www.jw.org/en/library/magazines/watchtower-study-august-2026/",
-      "fetchedAt": "2026-10-18T17:27:27.853Z"
+      "fetchedAt": "2026-10-19T20:02:59.440Z"
     }
   ],
   "es": [
     {
-      "weekStart": "2026-10-12",
-      "weekEnd": "2026-10-18",
-      "weeklyBible": "JEREMÍAS 42-44",
-      "meetingReading": " Jer 43:1-13",
-      "treasures": "Pidieron guía y luego la rechazaron",
-      "living": "Necesidades de la congregación",
-      "congregation": "wcg cap. 12",
-      "gemsReference": " Jer 44:18",
-      "gemsQuestion": "¿Por qué era incorrecto que los israelitas dijeran que estaban sufriendo porque habían dejado de “hacerle sacrificios a la Reina del Cielo”?",
+      "weekStart": "2026-10-19",
+      "weekEnd": "2026-10-25",
+      "weeklyBible": "JEREMÍAS 45, 46",
+      "meetingReading": " Jer 46:13-24",
+      "treasures": "La esperanza es clave para estar contentos",
+      "living": "“No se olviden [...] de compartir lo que tienen”",
+      "congregation": "wcg cap. 13",
+      "gemsReference": " Jer 46:22",
+      "gemsQuestion": "¿Por qué dice este versículo que Egipto sonaría “como una serpiente que se arrastra”?",
       "gemsSource": "",
       "additionalGems": [],
-      "watchtower": "LA ATALAYA (EDICIÓN DE ESTUDIO) Agosto de 2026",
-      "mwbUrl": "https://www.jw.org/es/biblioteca/guia-actividades-reunion-testigos-jehova/septiembre-octubre-2026-mwb/Vida-y-Ministerio-Cristianos-12-a-18-de-octubre-de-2026/",
+      "watchtower": "No creamos las mentiras de Satanás y confiemos en Jehová y Jesús",
+      "mwbUrl": "https://www.jw.org/es/biblioteca/guia-actividades-reunion-testigos-jehova/septiembre-octubre-2026-mwb/Vida-y-Ministerio-Cristianos-19-a-25-de-octubre-de-2026/",
       "watchtowerUrl": "https://www.jw.org/es/biblioteca/revistas/atalaya-estudio-agosto-2026/",
-      "fetchedAt": "2026-10-18T17:27:27.970Z"
+      "fetchedAt": "2026-10-19T20:02:59.581Z"
     }
   ]
 };
