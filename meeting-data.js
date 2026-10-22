@@ -15,7 +15,7 @@ export default {
       "watchtower": "Resist Satan’s Tactics—Trust In Jehovah and In Jesus",
       "mwbUrl": "https://www.jw.org/en/library/jw-meeting-workbook/september-october-2026-mwb/Life-and-Ministry-Meeting-Schedule-for-October-19-25-2026/",
       "watchtowerUrl": "https://www.jw.org/en/library/magazines/watchtower-study-august-2026/",
-      "fetchedAt": "2026-10-21T18:47:54.971Z"
+      "fetchedAt": "2026-10-22T18:41:04.302Z"
     }
   ],
   "es": [
@@ -34,7 +34,7 @@ export default {
       "watchtower": "No creamos las mentiras de Satanás y confiemos en Jehová y Jesús",
       "mwbUrl": "https://www.jw.org/es/biblioteca/guia-actividades-reunion-testigos-jehova/septiembre-octubre-2026-mwb/Vida-y-Ministerio-Cristianos-19-a-25-de-octubre-de-2026/",
       "watchtowerUrl": "https://www.jw.org/es/biblioteca/revistas/atalaya-estudio-agosto-2026/",
-      "fetchedAt": "2026-10-21T18:47:55.359Z"
+      "fetchedAt": "2026-10-22T18:41:04.374Z"
     }
   ]
 };
