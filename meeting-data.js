@@ -15,7 +15,7 @@ export default {
       "watchtower": "",
       "mwbUrl": "https://www.jw.org/en/library/jw-meeting-workbook/november-december-2026-mwb/Life-and-Ministry-Meeting-Schedule-for-November-9-15-2026/",
       "watchtowerUrl": "",
-      "fetchedAt": "2026-11-12T21:52:41.293Z"
+      "fetchedAt": "2026-11-13T21:28:40.975Z"
     }
   ],
   "es": [
@@ -34,7 +34,7 @@ export default {
       "watchtower": "",
       "mwbUrl": "https://www.jw.org/es/biblioteca/guia-actividades-reunion-testigos-jehova/noviembre-diciembre-2026-mwb/Vida-y-Ministerio-Cristianos-9-a-15-de-noviembre-de-2026/",
       "watchtowerUrl": "",
-      "fetchedAt": "2026-11-12T21:52:41.472Z"
+      "fetchedAt": "2026-11-13T21:28:41.077Z"
     }
   ]
 };
